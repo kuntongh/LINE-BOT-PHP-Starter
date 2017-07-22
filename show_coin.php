@@ -7,9 +7,5 @@ $curlConfig = array(
 );
 curl_setopt_array($ch, $curlConfig);
 $result = curl_exec($ch);
-
-$myJSONString = json_encode($result);
-$myArray = json_decode($myString);
-
-ptint_r($myArray);
+echo $result;
 curl_close($ch);
