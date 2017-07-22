@@ -7,5 +7,5 @@ $curlConfig = array(
 );
 curl_setopt_array($ch, $curlConfig);
 $result = curl_exec($ch);
-echo $result;
+echo json_encode($result, JSON_PRETTY_PRINT);
 curl_close($ch);
